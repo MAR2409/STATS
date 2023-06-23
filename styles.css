@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stat-container {
+  width: 325px;
+  height: 650px;
+  border: 3px solid white;
+}/*# sourceMappingURL=styles.css.map */
