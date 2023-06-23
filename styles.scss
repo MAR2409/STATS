@@ -22,6 +22,7 @@ $lexend: "Lexend Deca", sans-serif;
   padding: 0px;
   box-sizing: border-box;
   font-size: 15px;
+  color: white;
 }
 
 body {
@@ -34,11 +35,77 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
 }
 
 .stat-container {
   width: 325px;
-  height: 650px;
-  border: 3px solid white;
+  height: 745px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: $dark-blue;
+}
+
+/// IMAGE
+
+.image-header {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+/// STAT TEXT
+
+.stat-text {
+  text-align: center;
+  padding: 1.3rem;
+  .insight {
+    h1 {
+      font-size: 26px;
+      font-family: $inter;
+      padding: 0rem 0.85rem;
+      margin: 0.85rem 0rem 0.95rem 0rem;
+      .purple {
+        color: $soft-violet;
+        font-size: 26px;
+      }
+    }
+  }
+
+  .info {
+    p {
+      font-family: $inter;
+      color: $transparent-para;
+      font-weight: 400;
+      opacity: 0.75;
+      padding: 0 0.75rem;
+      line-height: 24px;
+    }
+  }
+}
+
+/// STATISTICS
+
+.statistic-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: $lexend;
+
+  .stats {
+    margin: 0.55rem 0;
+    p {
+      font-size: 22px;
+      text-align: center;
+      line-height: 28px;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $transparent-stats;
+    }
+  }
 }
