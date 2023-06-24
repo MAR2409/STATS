@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  height: 900px;
 }
 
 .stat-container {
@@ -30,6 +30,16 @@ body {
 }
 .image-header img {
   width: 100%;
+}
+.image-header .cover-image {
+  background-color: hsl(277, 64%, 61%);
+  position: absolute;
+  width: 325px;
+  height: 238px;
+  top: 78px;
+  opacity: 0.4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .stat-text {
@@ -73,4 +83,83 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (min-width: 1400px) {
+  .stat-container {
+    width: 1250px;
+    height: 500px;
+  }
+  .flex-group {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .image-header {
+    width: 75%;
+    height: 100%;
+  }
+  .image-header img {
+    width: 100%;
+  }
+  .image-header .cover-image {
+    background-color: hsl(277, 64%, 61%);
+    position: absolute;
+    width: 610px;
+    height: 500px;
+    top: 200px;
+    opacity: 0.4;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  .info-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 75%;
+  }
+  .info-flex .statistic-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 0.95rem;
+  }
+  .stat-text {
+    padding: 1.3rem;
+  }
+  .stat-text .insight h1 {
+    font-size: 38px;
+    font-family: "Inter", sans-serif;
+    padding: 0rem 0.85rem;
+    margin: 0.85rem 0rem 2rem 0rem;
+    text-align: left;
+  }
+  .stat-text .insight h1 .purple {
+    color: hsl(277, 64%, 61%);
+    font-size: 38px;
+  }
+  .stat-text .info p {
+    font-family: "Inter", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    opacity: 0.75;
+    padding: 0 0.75rem;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .statistic-container .stats {
+    margin: 5rem 0;
+  }
+  .statistic-container .stats p {
+    font-size: 28px;
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+  }
+  .statistic-container .stats p:nth-of-type(2) {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=styles.css.map */
