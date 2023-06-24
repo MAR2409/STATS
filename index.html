@@ -22,40 +22,52 @@
   <body>
     <div class="container-center">
       <div class="stat-container">
-        <figure class="image-header">
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt="Sitting in confrence room"
-          />
-        </figure>
+        <div class="flex-group">
+          <picture class="image-header">
+            <source
+              srcset="./images/image-header-desktop.jpg"
+              media="(min-width:1400px)"
+            />
 
-        <div class="stat-text">
-          <div class="insight">
-            <h1>
-              Get <span class="purple">insights</span> that help your business
-              grow.
-            </h1>
-          </div>
-          <div class="info">
-            <p>
-              Discover the benefits of data analytics and make better decisions
-              regarding revenue, customer experience, and overall efficiency.
-            </p>
-          </div>
-        </div>
+            <img
+              src="./images/image-header-mobile.jpg"
+              alt="Sitting in confrence room"
+            />
 
-        <div class="statistic-container">
-          <div class="companys stats">
-            <p>10k+</p>
-            <p>companies</p>
-          </div>
-          <div class="templates stats">
-            <p>314</p>
-            <p>templates</p>
-          </div>
-          <div class="queries stats">
-            <p>12M+</p>
-            <p>queries</p>
+            <div class="cover-image"></div>
+          </picture>
+
+          <div class="info-flex">
+            <div class="stat-text">
+              <div class="insight">
+                <h1>
+                  Get <span class="purple">insights</span> that help your
+                  business grow.
+                </h1>
+              </div>
+              <div class="info">
+                <p>
+                  Discover the benefits of data analytics and make better
+                  decisions regarding revenue, customer experience, and overall
+                  efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div class="statistic-container">
+              <div class="companys stats">
+                <p>10k+</p>
+                <p>companies</p>
+              </div>
+              <div class="templates stats">
+                <p>314</p>
+                <p>templates</p>
+              </div>
+              <div class="queries stats">
+                <p>12M+</p>
+                <p>queries</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
